@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { getPayload } from 'payload'
 import React from 'react'
 import { fileURLToPath } from 'url'
-import MembershipButton from '@/components/MembershipButton'
 
 import config from '@/payload.config'
 import './styles.css'
@@ -31,7 +30,6 @@ export default async function HomePage() {
         {!user && <h1>Welcome to your new project.</h1>}
         {user && <h1>Welcome back, {user.email}</h1>}
         <div className="links">
-          <MembershipButton />
           <a
             className="admin"
             href={payloadConfig.routes.admin}
