@@ -9,7 +9,7 @@ export default function NavBar() {
       </div>
       <div className={styles.right}>
         <Link href="/signup" className={styles.link}>Sign Up</Link>
-        <Link href="/admin" className={styles.link}>Admin Panel</Link>
+        <a href="/admin" target="_blank" rel="noopener noreferrer" className={styles.link}>Admin Panel</a>
         <a href="https://payloadcms.com/docs" target="_blank" rel="noopener noreferrer" className={styles.link}>Documentation</a>
       </div>
     </nav>

@@ -10,7 +10,7 @@ html {
   font-size: 18px;
   line-height: 32px;
 
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -127,16 +127,22 @@ svg {
       border-radius: 4px;
     }
 
-    .admin {
-      color: rgb(0, 0, 0);
-      background: rgb(1000, 1000, 1000);
-      border: 1px solid rgb(0, 0, 0);
+    .button {
+      color: #fff;
+      background: #222;
+      border: 1px solid #222;
+      padding: 0.4rem 1.1rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.15s, color 0.15s, border 0.15s;
+      text-decoration: none;
+      cursor: pointer;
     }
-
-    .docs {
-      color: rgb(1000, 1000, 1000);
-      background: rgb(0, 0, 0);
-      border: 1px solid rgb(1000, 1000, 1000);
+    .button:hover {
+      background: #fff;
+      color: #222;
+      border: 1px solid #222;
     }
   }
 
